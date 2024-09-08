@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title-head">Dynamic Resume Builder</h1>
+    <div class="resume-form">
+        <form id="resume-form">
+            <section id="personal-info-section">
+                <h1>Personal Information</h1>
+                <label class="lbl" for="first-name">First Name:</label>
+                <input class="inp" type="text" id="first-name" placeholder="First Name"><br><br>
+
+                <label class="lbl" for="last-name">Last Name:</label>
+                <input class="inp" type="text" id="last-name" placeholder="Last Name"><br><br>
+
+                <label class="lbl" for="email">Email:</label>
+                <input class="inp" type="email" id="email" placeholder="Email"><br><br>
+
+                <label class="lbl" for="phone">Contact No:</label>
+                <input class="inp" type="text" id="phone" maxlength="11" placeholder="Contact No"><br><br>
+            </section>
+
+            <section id="education-section">
+                <h1>Education</h1>
+                <label class="lbl" for="education">Education:</label>
+                <textarea class="inp" id="education" rows="4" cols="50" placeholder="Write about your education here"></textarea>
+            </section>
+
+            <section id="skills-section">
+                <h1>Skills</h1>
+                <label class="lbl" for="skills">Skills:</label>
+                <textarea class="inp" id="skills" rows="4" cols="50" placeholder="Skills"></textarea>
+            </section>
+
+            <section id="work-exp-section">
+                <h1>Work Experience</h1>
+                <label class="lbl" for="work-experience">Work Experience:</label>
+                <textarea class="inp" id="work-experience" rows="4" cols="50" placeholder="Enter your work experience"></textarea>
+            </section>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+
+    <div id="resume-display"></div>
+
+    <!-- Add download button -->
+    <button id="download-btn" style="display:none;">Download Resume</button>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>

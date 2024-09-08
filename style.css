@@ -1,0 +1,185 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    background: linear-gradient(to right, #00C9FF, #92FE9D);
+    color: black;
+}
+#title-head{
+    color: black;
+    text-decoration: underline orange;
+}
+
+h1 {
+    color: #cf1861;
+    text-align: center;
+    font-size: 30px;
+    text-decoration:3px underline palevioletred;
+}
+
+.resume-form {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    width: 60%;
+    margin-top: 30px;
+    border-radius: 20px;
+    background: #ffdfbe;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.lbl {
+    /* margin-bottom: 10px; */
+    padding: 10px 20px;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: 3px underline rgb(222, 121, 173);
+  }
+
+.inp {
+    padding: 12px;
+    width: 80%;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid #d10e97;
+    /* border: none; */
+    background: rgb(255, 255, 255);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.inp:hover {
+    transform: scale(1.008);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid #005579;
+    background: aliceblue;
+}
+
+
+button[type="submit"] {
+    padding: 12px 20px;
+    margin: 20px auto;
+    display: block;
+    background-color: #4c56af;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #2433bd;
+  }
+#personal-info-section,
+#education-section,
+#skills-section,
+#work-exp-section {
+  padding: 20px;
+  border-bottom: 2px solid #d6990c;
+}
+
+
+#resume-display {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    width: 60%; 
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 50px;
+    background: #ffdfbe;
+    overflow: hidden;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  #resume-display:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+  }
+  #resume-display h1 {
+    text-align: center;
+    color: #842def;
+    font-size: 28px;
+    border-bottom: 2px solid #c3890c;
+    padding-bottom: 10px;
+    margin-bottom: 30px; /* Increased margin for better spacing */
+  }
+  .resume-section-title {
+    font-size: 20px;
+    color: #1d6db7;
+    margin-bottom: 15px; 
+    font-weight: bold;
+    padding-left: 10px;
+    text-decoration: underline;
+  }
+  .resume-content {
+    line-height: 16px;
+    margin-bottom: 25px; 
+  }
+
+  .resume-content p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  
+  .resume-skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .resume-skills ul li {
+    margin-bottom: 5px;
+  }
+  .resume-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 25px; 
+  }
+  
+  .resume-info-item {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .resume-info-item span {
+    font-weight: bold;
+    color: #556a68;
+  }
+  .resume-section {
+    margin-bottom: 50px; 
+    padding: 35px;
+    background: #f4f6f8;
+    border-radius: 10px;
+  }
+  
+  .resume-section p {
+    margin-bottom: 15px; 
+  }
+  
+
+
+ #download-btn {
+    background-color: #4c56af;
+    color: white;
+    position: relative;
+    bottom: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+ #download-btn:hover {
+    background-color: #2b39b5;
+}
